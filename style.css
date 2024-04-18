@@ -1,17 +1,36 @@
+@font-face {
+    font-family: 'PT Sans';
+    src: url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+    font-weight: bold;
+}
+li {
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: medium;
+}
+
 h1 {
     font-family: "PT Sans", sans-serif;
-    font-weight: 7;
+    font-weight: normal;
     font-style: normal;
     text-transform: uppercase;
+    font-size: smaller;
 }
 h2 {
     font-family: "PT Sans", sans-serif;
-    font-weight: 34000;
+    font-weight: bolder;
     font-style: bold;
     text-transform: uppercase;
+    font-size: larger;
 }
 h3 {
     font-family: "PT Sans", sans-serif;
-    font-weight: 7;
+    font-weight: normal;
     font-style: normal;
+    font-size: smaller;
 }
