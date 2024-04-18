@@ -1,0 +1,17 @@
+h1 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 7;
+    font-style: normal;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 34000;
+    font-style: bold;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 7;
+    font-style: normal;
+}
