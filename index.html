@@ -8,28 +8,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <!-- "PT Sans" font is a good substitute for "Cera" font-->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Нормализация стилей -->
     <link rel="stylesheet" href="style.css">
+    <!-- Очень мало информации по макету удается вытащить из Figma -->
 </head>
 <body>
     <header>
-        <p><a href="index.html"><img src="./assets/images/Logo.svg" width="150" height="35" alt="Logo"></a></p>
-        <!--Нужно добавить картинку в ссылку по тегу А-->
-        <nav><ul>
-            <li><a>Home</a></li>
-            <li><a>Shop</a></li>
-            <li><a>Plant Carep</a></li>
-            <li><a>Blogs</a></li>
-            <li><a><img src="./assets/images/Vector.png" alt="Serch"></a></li>
-            <li><a><img src="./assets/images/Vector2.png" alt="Cart"></a></li>
-            <li><form action=""><p><button type="log"><img src="./assets/images/Logout.png" alt="Login" style="vertical-align:middle">Login</button></p></form></li>
-        </ul>
+        <p><a href="index.html"><img id="logo" src="./assets/images/Logo.svg" width="150" height="35" alt="Logo"></a></p>
+        <nav id="main_menu">
+            <a class="menu" href="index.html">Home</a>
+            <a class="menu" href="shop.html">Shop</a>
+            <a class="menu" href="plant_care.html">Plant Care</a>
+            <a class="menu" href="blog.html">Blogs</a>
+            <a class="menu" href="serch.html"><img src="./assets/images/Vector.png" alt="Serch"></a>
+            <a class="menu" href="cart.html"><img src="./assets/images/Vector2.png" alt="Cart"></a>
+            <form class="menu" action="" method="get"><p><button class="menu" type="button"><img src="./assets/images/Logout.png" alt="Logout" style="vertical-align:middle">Login</button></p></form>
+        <!-- Не знаю, какую ссылку пока вставлять в action -->
         </nav>
-    <!-- Добавила тэг nav, еще все ссылки добавить в тэг А -->
     </header>
     <main>
         <article>
             <h1>Welcome to GreenShop</h1>
-            <h2>Let’s Make a
+            <h2 id="tagline">Let’s Make a
                 <br/>
                 Better Planet</h2>
             <h3>We are an online plant shop offering a wide range of cheap and trendy plants. 
@@ -40,8 +41,8 @@
                     <button class="reg">shop now</button>
                 </div>
             </div>
-            <img src="./assets/images/01 1.png" alt="big_plant">
-            <img src="./assets/images/01 2.png" alt="little_plant">
+            <img src="./assets/images/01_1.png" alt="big_plant">
+            <img src="./assets/images/01_2.png" alt="little_plant">
         </article>
         <!-- В тэге article обязательно должен быть тэг h -->
     </main>
