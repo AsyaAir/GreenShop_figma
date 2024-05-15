@@ -1,3 +1,4 @@
+/* Подключение шрифта */
 @font-face {
     font-family: 'PT Sans';
     src: url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
@@ -7,26 +8,22 @@
     src: url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
     font-weight: bold;
 }
-/* Подключение шрифта */
-h1,
-h3 {
+.heading__greeting .heading__desc{
     font-family: "PT Sans", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: smaller;
 }
-h1 {
+.heading__greeting {
     text-transform: uppercase;
 }
-/* Селекторы по тэгам h */
-.menu {
+.menu__button-form .button_log-in {
 text-decoration: none;
 color: green;
 font-family: "PT Sans", sans-serif;
 padding: 4px;
 }
-/* Селектор по классу menu */
-#tagline {
+.heading_slogan {
     font-family: "PT Sans", sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
@@ -35,12 +32,9 @@ padding: 4px;
 a:visited{
     color: green;
     }
-/* Псевдокласс visited */
-#main_menu .menu:hover {
+.menu .menu:hover {
 text-decoration: underline;
 }
-/* Псевдокласс hover */
 a:not(:active) {
     color: black;
 }
-/* Псевдокласс active */

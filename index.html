@@ -3,50 +3,72 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>file:///C:/Users/Asya/Documents/ITGirls/WORKS_ITGirls/Week4/HomeWork/GreenShop_figma/index.html</title>
+    <title>GreenShop_Figma_8-Week</title>
+    <!-- "PT Sans" font is a good substitute for "Cera" font from Figma page-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <!-- "PT Sans" font is a good substitute for "Cera" font-->
     <link rel="stylesheet" href="./normalize.css">
     <!-- Нормализация стилей -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Очень мало информации по макету удается вытащить из Figma -->
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <header>
-        <p><a href="index.html"><img id="logo" src="./assets/images/Logo.svg" width="150" height="35" alt="Logo"></a></p>
-        <nav id="main_menu">
-            <a class="menu" href="index.html">Home</a>
-            <a class="menu" href="shop.html">Shop</a>
-            <a class="menu" href="plant_care.html">Plant Care</a>
-            <a class="menu" href="blog.html">Blogs</a>
-            <a class="menu" href="serch.html"><img src="./assets/images/Vector.png" alt="Serch"></a>
-            <a class="menu" href="cart.html"><img src="./assets/images/Vector2.png" alt="Cart"></a>
-            <form class="menu" action="" method="get"><p><button class="menu" type="button"><img src="./assets/images/Logout.png" alt="Logout" style="vertical-align:middle">Login</button></p></form>
-        <!-- Не знаю, какую ссылку пока вставлять в action -->
+
+<!-- Пример страницы, сверстанной по архмитектуре БЭМ -->
+
+<!-- Блок page -->
+<body class="page">
+    <!-- Вложенный блок header -->
+    <header class="header">
+        <!-- Вложенный блок logo -->
+        <div class="logo">
+            <!-- Эдементы logo_link и logo_img блока logo -->
+            <a class="logo__link" href="index.html"><img class="logo__img" src="./assets/images/Logo.svg" width="150" height="35" alt="Logo"></a>
+        </div>
+        <!-- Вложенный блок menu -->
+        <nav class="menu">
+            <!-- Элемент link c модификатором home блока menu -->
+            <a class="menu__link menu__link_home" href="index.html">Home</a>
+            <!-- Элемент link c модификатором shop блока menu -->
+            <a class="menu__link menu__link_shop" href="shop.html">Shop</a>
+            <!-- Элемент link c модификатором plant-care блока menu -->
+            <a class="menu__link menu__link_plant-care" href="plant_care.html">Plant Care</a>
+            <!-- Элемент link c модификатором blogs блока menu -->
+            <a class="menu__link menu__link_blogs" href="blog.html">Blogs</a>
+            <!-- Элемент icon-link c модификатором serch блока menu -->
+            <a class="menu__icon-link menu__icon-link_serch" href="serch.html"><img src="./assets/images/Vector.png" alt="Serch"></a>
+            <!-- Элемент icon-link c модификатором cart блока menu -->
+            <a class="menu__icon-link menu__icon-link_cart" href="cart.html"><img src="./assets/images/Vector2.png" alt="Cart"></a>
+            <!-- Вложенный блок button-form блока menu -->
+            <form class="menu__button-form" action="/" method="get">
+                <!-- Элемет button с модификатором log-in блока button-form-->
+                <button class="button-form__button button_log-in" type="button"><img src="./assets/images/Logout.png" alt="Log-in" style="vertical-align:middle">Log-in</button>
+            </form>
         </nav>
     </header>
-    <main>
-        <article>
-            <h1>Welcome to GreenShop</h1>
-            <h2 id="tagline">Let’s Make a
-                <br/>
+    <!-- Вложенный блок main -->
+    <main class="main">
+        <!-- Вложенный блок heading -->
+        <article class="heading">
+            <!-- Элемет greeting блока heading-->
+            <h1 class="heading__greeting">Welcome to GreenShop</h1>
+            <!-- Элемет slogan блока heading-->
+            <h2 class="heading_slogan">Let’s Make a<br/>
                 Better Planet</h2>
-            <h3>We are an online plant shop offering a wide range of cheap and trendy plants. 
+                <!-- Элемет desc блока heading-->
+            <h3 class="heading__desc">We are an online plant shop offering a wide range of cheap and trendy plants. 
                 <br/>
                 Use our plants to create an unique Urban Jungle. Order your favorite plants!</h3>
-            <div class="container">
-                <div>
-                    <button class="reg">shop now</button>
-                </div>
+            <!-- Элемент button с модификатором shop-now блока heading -->
+            <button class="heading__button button_shop-now">Shop now</button>
+            <!-- Вложенный блок images -->
+            <div class="images">
+                <!-- Элемет images__plants с модификатором big блока images -->
+                <img class="images__plants plants_big" src="./assets/images/01_1.png" alt="big_plant">
+                <!-- Элемет images__plants с модификатором small блока images -->
+                <img class="images__plants plants_small" src="./assets/images/01_2.png" alt="small_plant">
             </div>
-            <img src="./assets/images/01_1.png" alt="big_plant">
-            <img src="./assets/images/01_2.png" alt="little_plant">
         </article>
         <!-- В тэге article обязательно должен быть тэг h -->
     </main>
-    <footer>  
-    </footer>
 </body>
 </html>
